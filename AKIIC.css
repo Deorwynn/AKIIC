@@ -45,36 +45,54 @@ body {
 
 .jumbotron {
 	background: transparent;
-	color: #593a27;
+	color: #bcd0db;
 	padding-right: 16%;
 	padding-top: 12%;
-	text-shadow: 1px 0px 1px rgba(208, 183, 155, 1),
-				2px 0px 2px #efe3dc, 
-				0px 1px 1px rgba(208, 175, 155, 0.9),
-				0px 4px 3px rgba(208, 175, 155, 0.9),
-				0px 8px 13px rgba(208, 175, 155, 0.7),
+	text-shadow: 1px 0px 1px #593a27,
+				2px 0px 2px #593a27, 
+				0px -1px 1px #efe3dc,
+				0px 2px 3px #efe3dc,
+				0px 2px 13px #efe3dc,
 				0px 0px 20px #efe3dc,
-				0px 18px 23px rgb(208, 175, 155),
-				0px 18px 35px rgb(208, 175, 155),
-				0px -18px 35px rgb(208, 175, 155);
+				0px 0px 23px rgb(208, 175, 155);
 }
 
 .jumbotron p {
 	font-weight: 700;
 	margin: 0;
-	color: #593a27;
+	color: #bcd0db;
 }
 
-.navbar-brand a {
-	color: red;
-}
-
+.lightcolumn {
+	background: linear-gradient(to bottom, #160701, transparent, #160701);
+	padding: 10px;
+	}
+	
+	.lightcolumn ul {
+		list-style-type: none;
+		}
+	
+	.lightcolumn a {
+		color: #bcd0db;
+		font-size: 16px;
+		text-shadow: 0px 1px 1px #2B3856;
+		margin: none;
+		font-family: 'Josefin Sans', sans-serif;
+		}
+		
+a:hover {
+	color: #e8eef1;
+	text-shadow: 0px 1px 1px #2B3856;
+	text-decoration: none;
+	}
+	
 .imagefit {
 	width: 96%;
-	background-color: rgba(205, 177, 177, 0.3);
+	background-color: rgba(205, 177, 177, 0.2);
 	border: 2px solid rgba(62, 40, 40, 0.5);
 	border-radius: 10px;
 	padding: 8px;
+	margin: 0px auto;
 	text-align: center;
 	display: inline-block;
 }
@@ -106,13 +124,14 @@ body {
 	background: rgba(39, 25, 25, 0.8);
 }
 
-#content p { 
+p { 
 	font-size: 16px;
 	color: rgba(208, 183, 155, 1);
 }
 
 .p-margin {
 	margin-left: 30px;
+	margin-right: 20px;
 }
 
 #content ul li {
@@ -129,22 +148,12 @@ body {
 	margin: 10px 20px;
 }
 
-#content a {
-	margin-top: 0;
-	text-align: left;
-	display: inline-block;
-	color: #82CAFF;
-}
-
-#content a:hover {
-	text-decoration: none;
-	color: #56A5EC;
-}
 
 h2 {
 	font-size: 1.5em;
 	color: rgba(208, 183, 155, 1);
 	margin-left: 30px;
+	margin-right: 20px;
 }
 
 .center-it {
@@ -157,7 +166,7 @@ h2 {
   position: relative;
   list-style: none;
   overflow: hidden;
-  width: 92%;
+  width: 600px;
   padding: 0;
   margin: 0;
   }
@@ -166,7 +175,7 @@ h2 {
   -webkit-backface-visibility: hidden;
   position: absolute;
   display: none;
-  width: 92%;
+  width: 600px;
   text-align: center;
   top: 0;
   }
@@ -181,16 +190,16 @@ h2 {
   display: block;
   height: 350px;
   text-align: center;
-  width: 92%;
+  width: 600px;
   background-size: cover;
   border-radius: 4px;
-  border: 2px solid rgba(109, 70, 70, 0.4);
+  border-top: 2px solid #c6a886;
+  border-bottom: 2px solid #c6a886;
   }
   
 #thumbnail {
 	width: 96%;
-	background-color: rgba(205, 177, 177, 0.3);
-	border: 2px solid rgba(62, 40, 40, 0.5);
+	background-color: transparent;
 	border-radius: 10px;
 	padding: 8px;
 	text-align: center;
@@ -203,24 +212,38 @@ h2 {
 
 button {
 	margin: 10px;
-	width: 70px;
+	width: 120px;
 	height: 30px;
 	font-size: 1.2em;
-	border-radius: 10px;
+	border-radius: 5px;
 	border: 1px solid rgb(182, 143, 99);
 	border-left: 1px solid rgb(223, 205, 185);
 	border-bottom: 1px solid rgb(223, 205, 185);
-	background: rgba(208, 183, 155, 1);
+	background: linear-gradient( to bottom, #160701, #291307, #160701);
+	text-shadow: 0px 1px 1px #160701;
 	box-shadow: -1px -1px 8px rgba(22, 7, 1, 0.5);
-	color: black;
+	color: rgba(208, 183, 155, 1);
 	
 }
 
 button:hover {
-	background: rgb(198, 168, 134);
-	border: 1px solid rgb(182, 143, 99);
-	border-left: 1px solid rgb(139, 106, 65);
-	border-bottom: 1px solid rgb(139, 106, 65);
-	box-shadow: 0px 0px 4px rgba(22, 7, 1, 0.8);
-	border-bottom: 1px solid rgb(223, 205, 185);
+	background: linear-gradient( to bottom, #291307, #160701, #291307);
+	box-shadow: 1px 1px 4px rgba(22, 7, 1, 0.9);
+	color: #c6a886;
+	text-shadow: 0px 1px 1px #160701;
+}
+
+
+.js .toggle-box .content { display:none; }
+.toggle-box { border:1px solid #8eb0c4; margin-top: 10px; }
+.toggle { cursor:pointer; }
+.header { margin:0; padding:5px; text-align: center; background: linear-gradient(to right, #c6a886, #bcd0db, #c6a886); }
+.header a { color: #291307; text-shadow: 0px 1px 1px #e9f0f4;}
+.togglecontent { padding:10px }
+
+
+@media only screen and (max-width: 768px) {
+    .imagefit {
+        width: 300px;
+    }
 }

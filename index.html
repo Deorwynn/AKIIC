@@ -59,7 +59,7 @@
 	</div>
 
 	<div id="content">
-		<div class="row">
+
 			<div class="col-lg-8">
 			
 			<ul class="rslides center-it">
@@ -119,31 +119,52 @@
 				</ul>
 				<br>
 			</div>
-			<div class="col-lg-4">
-				<p><a href="#">Slovak President in Kenya for trade talks</a></p>
-				<p><a href="#">Africa Day 2016</a></p>
-				<p><a href="#">1st African cultural evening</a></p>
-				<p><a href="#">2nd African cultural evening</a></p>
-				<p><a href="#">3rd African cultural evening</a></p>
-				<p><a href="#">Africa Day 2015</a></p>
-				<p><a href="#">Hand book for immigrants</a></p>
-				<p><a href="#">Constitutional Court dismisses petition on discrimination of foreigners</a></p>
-				<p><a href="#">Changes in residence and employment of foreign nationals in Slovakia</a></p>
-				<p><a href="#">Anti-racism tournament</a></p>
-				<p><a href="#">Minister M. Lajčák met with his Kenyan partner A. C. Mohamed</a></p>
+			<div class="col-lg-4 lightcolumn">
+				<ul>
+					<li><a href="#">Slovak President in Kenya for trade talks</a></li>
+					<li><a href="#">Africa Day 2016</a></li>
+					<li><a href="#">1st African cultural evening</a></li>
+					<li><a href="#">2nd African cultural evening</a></li>
+					<li><a href="#">3rd African cultural evening</a></li>
+					<li><a href="#">Africa Day 2015</a></li>
+					<li><a href="#">Hand book for immigrants</a></li>
+					<li><a href="#">Constitutional Court dismisses petition on discrimination of foreigners</a></li>
+					<li><a href="#">Changes in residence and employment of foreign nationals in Slovakia</a></li>
+					<li><a href="#">Anti-racism tournament</a></li>
+					<li><a href="#">Minister M. Lajčák met with his Kenyan partner A. C. Mohamed</a></li>
+				</ul>
 				<br>
 					<div id="thumbnail">
 						<img class="thumbimg" src="africa4.jpg"><br>
 						<p>Lorem ipsum dolor sit amet, esse consulatu ex his, ne oblique legimus est. Lorem ipsum dolor sit amet, esse consulatu ex his, ne oblique legimus est.</p>
 						<button type="button">Link</button>
-						<button type="button">Link</button>
 					</div>
 				<br>
 				<br>
 				<img class="imagefit" src="animal2.jpg">
-				
+				<div class="toggle-box">
+				  <h3 class="toggle header"><a href="#">Slovak Embassies in Africa</a></h3>
+				  <div class="togglecontent"><strong>Product Features:</strong><br />
+					<ul>
+					  <li>Feature 1</li>
+					  <li>Feature 1</li>
+					  <li>Feature 1</li>
+					</ul>
+					</div>
+				</div>
+				<div class="toggle-box">
+				  <h3 class="toggle header"><a  href="#">Heading</a></h3>
+				  <div class="togglecontent"><strong>Product Features:</strong><br />
+					<ul>
+					  <li>Feature 1</li>
+					  <li>Feature 1</li>
+					  <li>Feature 1</li>
+					</ul>
+					</div>
+				</div>
+
 			</div>
-		</div>
+		
 		<div id="footer">
 			<div class="row">
 				<div class="col-lg-7">
@@ -238,17 +259,26 @@
 
 </script>
 
+<script>
+(function($){
+  
+  $(function(){
+    
+      $('html').toggleClass('no-js js');
+    
+    $('.toggle-box .toggle').click(function(e){
+        e.preventDefault();
+        
+        $(this).next('.togglecontent').slideToggle();
+    });
+    
+  });
+  
+})(jQuery);
+</script>
+
 </div><!-- /.container -->
 
-
-<div id="fb-root"></div>
-	<script>(function(d, s, id) {
-	  var js, fjs = d.getElementsByTagName(s)[0];
-	  if (d.getElementById(id)) return;
-	  js = d.createElement(s); js.id = id;
-	  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.9";
-	  fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));</script>
 
 
 <script type="text/javascript" src="AKIIC.js"></script>
