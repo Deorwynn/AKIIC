@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700');
+
+body { 
+	background: linear-gradient(to bottom, #160701, #603d29);
+	background-size: cover;
+	height: 100%;
+}
+
+.container {
+	background: url("giraffe.jpg") fixed;
+	background-size: cover;
+	border-radius: 10px;
+	font-family: 'Josefin Sans', sans-serif;
+	color: #603d29;
+	box-shadow: 1px 0px 15px rgba(35, 23, 16, 0.8),
+				-1px 0px 15px rgba(35, 23, 16, 0.8);
+}
+
+.hideme1
+{
+    opacity:0;
+}
+
+.hideme2
+{
+    opacity:0;
+}
+
+.hideme3
+{
+    opacity:0;
+}
+
+.hideme4
+{
+    opacity:0;
+}
+
+
+.navbar-inverse {
+	background: linear-gradient(to bottom, #160701, #603d29);
+	font-size: 22px;
+	border: 2px solid rgba(109, 70, 70, 0.4);
+}
+
+.jumbotron {
+	background: transparent;
+	color: #593a27;
+	padding-right: 16%;
+	padding-top: 12%;
+	text-shadow: 1px 0px 1px rgba(208, 183, 155, 1),
+				2px 0px 2px #efe3dc, 
+				0px 1px 1px rgba(208, 175, 155, 0.9),
+				0px 4px 3px rgba(208, 175, 155, 0.9),
+				0px 8px 13px rgba(208, 175, 155, 0.7),
+				0px 0px 20px #efe3dc,
+				0px 18px 23px rgb(208, 175, 155),
+				0px 18px 35px rgb(208, 175, 155),
+				0px -18px 35px rgb(208, 175, 155);
+}
+
+.jumbotron p {
+	font-weight: 700;
+	margin: 0;
+	color: #593a27;
+}
+
+.navbar-brand a {
+	color: red;
+}
+
+.imagefit {
+	width: 96%;
+	background-color: rgba(205, 177, 177, 0.3);
+	border: 2px solid rgba(62, 40, 40, 0.5);
+	border-radius: 10px;
+	padding: 8px;
+	text-align: center;
+	display: inline-block;
+}
+
+.thumbimg {
+	width: 90%;
+	margin-bottom: 10px;
+	text-align: center;
+	display: inline-block;
+}
+
+#footer {
+	background: linear-gradient( to bottom, #160701, black);
+	display: table;
+	width: 100%;
+	text-shadow: 1px 0px 6px rgba(208, 183, 155, 1);
+	padding: 10px 0px 5px 0px;
+	text-align: center;
+}
+
+#content {
+	border-radius: 4px;
+	border: 2px solid rgba(109, 70, 70, 0.4);
+	margin-top: 13%;
+	text-shadow: 1px 1px 2px black,
+				1px 0px 3px black;
+	text-align: justify;
+	padding-top: 15px;
+	background: rgba(39, 25, 25, 0.8);
+}
+
+#content p { 
+	font-size: 16px;
+	color: rgba(208, 183, 155, 1);
+}
+
+.p-margin {
+	margin-left: 30px;
+}
+
+#content ul li {
+	font-size: 16px;
+	text-align: left;
+	color: rgba(208, 183, 155, 1);
+	margin: 10px 20px;
+}
+
+#content ol li {
+	font-size: 16px;
+	text-align: left;
+	color: rgba(208, 183, 155, 1);
+	margin: 10px 20px;
+}
+
+#content a {
+	margin-top: 0;
+	text-align: left;
+	display: inline-block;
+	color: #82CAFF;
+}
+
+#content a:hover {
+	text-decoration: none;
+	color: #56A5EC;
+}
+
+h2 {
+	font-size: 1.5em;
+	color: rgba(208, 183, 155, 1);
+	margin-left: 30px;
+}
+
+.center-it {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 92%;
+  padding: 0;
+  margin: 0;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 92%;
+  text-align: center;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  text-align: center;
+  }
+
+.rslides img {
+  display: block;
+  height: 350px;
+  text-align: center;
+  width: 92%;
+  background-size: cover;
+  border-radius: 4px;
+  border: 2px solid rgba(109, 70, 70, 0.4);
+  }
+  
+#thumbnail {
+	width: 96%;
+	background-color: rgba(205, 177, 177, 0.3);
+	border: 2px solid rgba(62, 40, 40, 0.5);
+	border-radius: 10px;
+	padding: 8px;
+	text-align: center;
+	display: inline-block;
+}
+
+#thumbnail p {
+	text-align: center;
+}
+
+button {
+	margin: 10px;
+	width: 70px;
+	height: 30px;
+	font-size: 1.2em;
+	border-radius: 10px;
+	border: 1px solid rgb(182, 143, 99);
+	border-left: 1px solid rgb(223, 205, 185);
+	border-bottom: 1px solid rgb(223, 205, 185);
+	background: rgba(208, 183, 155, 1);
+	box-shadow: -1px -1px 8px rgba(22, 7, 1, 0.5);
+	color: black;
+	
+}
+
+button:hover {
+	background: rgb(198, 168, 134);
+	border: 1px solid rgb(182, 143, 99);
+	border-left: 1px solid rgb(139, 106, 65);
+	border-bottom: 1px solid rgb(139, 106, 65);
+	box-shadow: 0px 0px 4px rgba(22, 7, 1, 0.8);
+	border-bottom: 1px solid rgb(223, 205, 185);
+}
