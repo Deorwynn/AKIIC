@@ -64,8 +64,9 @@ body {
 }
 
 .lightcolumn {
-	background: linear-gradient(to bottom, #160701, transparent, #160701);
-	padding: 10px;
+	background: linear-gradient(to bottom, turquoise, transparent, #160701);
+	padding: 10px 10px 42px 10px;
+	margin: none;
 	}
 	
 	.lightcolumn ul {
@@ -73,9 +74,9 @@ body {
 		}
 	
 	.lightcolumn a {
-		color: #bcd0db;
+		color: #00046B;
 		font-size: 16px;
-		text-shadow: 0px 1px 1px #2B3856;
+		text-shadow: none;
 		margin: none;
 		font-family: 'Josefin Sans', sans-serif;
 		}
@@ -88,13 +89,13 @@ a:hover {
 	
 .imagefit {
 	width: 96%;
-	background-color: rgba(205, 177, 177, 0.2);
+	background-color: rgba(67, 198, 219, 0.4);
 	border: 2px solid rgba(62, 40, 40, 0.5);
 	border-radius: 10px;
+	display: block;
 	padding: 8px;
-	margin: 0px auto;
+	margin: 0px auto 25px auto;
 	text-align: center;
-	display: inline-block;
 }
 
 .thumbimg {
@@ -103,6 +104,7 @@ a:hover {
 	text-align: center;
 	display: inline-block;
 }
+
 
 #footer {
 	background: linear-gradient( to bottom, #160701, black);
@@ -115,13 +117,15 @@ a:hover {
 
 #content {
 	border-radius: 4px;
-	border: 2px solid rgba(109, 70, 70, 0.4);
 	margin-top: 13%;
 	text-shadow: 1px 1px 2px black,
 				1px 0px 3px black;
 	text-align: justify;
-	padding-top: 15px;
 	background: rgba(39, 25, 25, 0.8);
+}
+
+.content-padding {
+	padding-top: 15px;
 }
 
 p { 
@@ -148,6 +152,9 @@ p {
 	margin: 10px 20px;
 }
 
+#main-info {
+	padding: 20px;
+}
 
 h2 {
 	font-size: 1.5em;
@@ -219,27 +226,40 @@ button {
 	border: 1px solid rgb(182, 143, 99);
 	border-left: 1px solid rgb(223, 205, 185);
 	border-bottom: 1px solid rgb(223, 205, 185);
-	background: linear-gradient( to bottom, #160701, #291307, #160701);
+	background: linear-gradient( to bottom, #160701, #291307);
 	text-shadow: 0px 1px 1px #160701;
-	box-shadow: -1px -1px 8px rgba(22, 7, 1, 0.5);
+	box-shadow: 1px 2px 10px rgba(22, 7, 1, 0.5);
 	color: rgba(208, 183, 155, 1);
 	
 }
 
 button:hover {
-	background: linear-gradient( to bottom, #291307, #160701, #291307);
-	box-shadow: 1px 1px 4px rgba(22, 7, 1, 0.9);
+	background: linear-gradient( to bottom, #291307, #160701);
+	box-shadow: 0px 1px 4px rgba(22, 7, 1, 0.9);
 	color: #c6a886;
 	text-shadow: 0px 1px 1px #160701;
 }
 
 
-.js .toggle-box .content { display:none; }
-.toggle-box { border:1px solid #8eb0c4; margin-top: 10px; }
-.toggle { cursor:pointer; }
+.js .toggle-box .content { 
+	display:none; 
+	}
+	
+.toggle-box { 
+	border: 1px solid turquoise; 
+	margin-top: 20px; 
+	margin-bottom: 20px;
+	}
+	
+.toggle {
+	cursor:pointer; 
+	}
+	
 .header { margin:0; padding:5px; text-align: center; background: linear-gradient(to right, #c6a886, #bcd0db, #c6a886); }
 .header a { color: #291307; text-shadow: 0px 1px 1px #e9f0f4;}
-.togglecontent { padding:10px }
+.togglecontent {
+	padding:20px 
+	}
 
 
 @media only screen and (max-width: 768px) {
